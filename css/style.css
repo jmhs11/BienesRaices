@@ -58,6 +58,10 @@ img {
     display: block !important;
 }
 
+.contenido-centrado {
+    max-width: 80rem;
+}
+
 /* Botones */
 .boton {
     color: white;
@@ -185,7 +189,9 @@ img {
     list-style: none;
     padding: 0;
     display: flex;
+    flex: 1;
     justify-content: space-evenly;
+    max-width: 50rem;
 }
 
 .iconos-caracteristicas li {
@@ -313,7 +319,8 @@ img {
     color: white;
 }
 
-/* Internas */
+/** Internas **/
+/* Nosotros */
 .contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -326,3 +333,11 @@ img {
     margin: 0;
     padding: 0 0 3rem 0;
 }
+
+/* Anuncios */
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
