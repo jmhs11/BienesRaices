@@ -91,7 +91,12 @@ img {
     .boton {
         display: inline-block;
         flex: 0 0 auto;
+        border: none;
     }
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .boton-amarillo {
@@ -436,6 +441,63 @@ img {
 /* Anuncios */
 
 .resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Contacto */
+
+form p {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]),
+
+/*aplicar estilos a todos los selectores de input excepto [type="submit"]*/
+
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    /*-webkit-appearance: none;*/
+    /*En caso de chrome y safari es necesaria esta linia*/
+    appearance: none;
+}
+
+textarea {
+    height: 20rem;
+}
+
+.forma-contacto {
+    max-width: 30rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
